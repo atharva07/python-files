@@ -20,7 +20,7 @@ def func3(N):
 func3([1,2,3,4,5,6])
 
 # Logarithmic
-x = len([1,2,3,4,5])
+x = len([1,2,3,4,5,6,7,8])
 while x>0:
     y = 2+2
     x = x // 2
