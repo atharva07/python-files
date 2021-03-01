@@ -86,3 +86,19 @@ def chars_mix_up(a,b):
 
     return new_a + ' ' + new_b
 print(chars_mix_up('abc','xyz'))
+
+# add 'ing' to the end of the string. If the string already exist with 'ing' then replace it with 'ly', and if the wors is less than 3, then leave it as it is.
+def add_string(str1):
+    length = len(str1)
+
+    if length > 2:
+        if str1[-3:] == 'ing':
+            str1 += 'ly'
+        else: 
+            str1 += 'ing'
+    return str1
+
+# driver code
+print(add_string('ab'))
+print(add_string('abs'))
+print(add_string('string'))
