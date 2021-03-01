@@ -102,3 +102,21 @@ def add_string(str1):
 print(add_string('ab'))
 print(add_string('abs'))
 print(add_string('string'))
+
+def not_poor(str1):
+    snot = str1.find('not')
+    spoor = str1.find('poor')
+
+    if spoor > snot and snot > 0 and spoor > 0:
+        str1 = str1.replace(str1[snot:(spoor+4)], 'good')
+        return str1
+    else:
+        return str1
+
+print(not_poor("The song is not that poor!"))
+print(not_poor("The song is poor"))
+
+def find_longest_word(word_list):
+    word_list = []
+    for n in word_list:
+        
