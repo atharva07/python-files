@@ -6,5 +6,3 @@ with urlopen("http://api.currencylayer.com/live?access_key=f50ffac22c2df1f274331
 
 data = json.loads(source)
 print(json.dumps(data, indent=2))
-
-
